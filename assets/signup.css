@@ -89,6 +89,8 @@ main {
     font-size: 50px;
     font-family: "Cabin";
     line-height: 50px;
+    margin-block-end: 20px;
+    width: max-content;
   }
 
   > p {
@@ -96,19 +98,13 @@ main {
     font-weight: 400;
     font-size: 16px;
     color: #737373;
-    width: 460px;
+    width: fit-content;
     line-height: 25px;
   }
 }
 
-img {
+#logo {
   margin-block-end: 50px;
-}
-
-h2 {
-  margin-block-end: 20px;
-  line-height: 50px;
-  width: max-content;
 }
 
 .right {
@@ -124,24 +120,21 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 100%;
 }
 
 .form-group {
-  width: 238px;
+  width: 48%;
   margin-block-end: 30px;
 }
 
 .form-label {
   margin-block-end: 8px;
-  width: 100%;
 }
 
 .form-input,
 .form-select,
 .form-button {
   height: 48px;
-  width: 100%;
 }
 
 input,
@@ -164,7 +157,6 @@ button {
   max-width: 463px;
 
   > p {
-    width: 463px;
     font-family: "Sofia";
     font-size: 14px;
     line-height: 25px;
@@ -185,7 +177,6 @@ button {
   background: rgba(46, 196, 182, 1);
   color: rgba(255, 255, 255, 1);
   font-weight: 600;
-  /* font-family: "Sofia"; */
   font-size: 16px;
   line-height: 16px;
   text-align: center;
@@ -193,7 +184,6 @@ button {
 }
 
 label {
-  /* font-family: "Sofia"; */
   font-weight: 600;
   font-size: 16px;
   line-height: 14px;
@@ -202,7 +192,6 @@ label {
 
 #first-name {
   border: 1px solid rgba(46, 196, 182, 1);
-  /* border: 3px solid rgba(46, 196, 182, 1); */
   box-shadow: 0 0 0 3px rgba(46, 196, 182, 1);
 }
 
@@ -210,23 +199,30 @@ label {
   display: none;
 }
 
-/* .responsive-paragraph::before {
-  content: "Start benefiting from the wellness experience. For companies looking on increasing productivity, and improving organization wellness.";
-} */
-
-@media (max-width: 375px) {
+@media (max-width: 795px) {
   body {
-    max-width: 375px;
+    max-width: 795px;
   }
   .status-bar {
-    display: block;
-    max-width: 375px;
+    display: flex;
+    max-width: 795px;
+    justify-content: space-between;
     height: 44px;
   }
 
   .status-bar-time p {
     margin-block: 14px 12px;
     margin-inline-start: 20px;
+  }
+
+  .status-icons {
+    margin-block: 17px 15.5px;
+    margin-inline-end: 14.5px;
+
+    > img {
+      width: 67px;
+      height: 11.5px;
+    }
   }
 
   main {
@@ -237,10 +233,9 @@ label {
 
   .left {
     margin: 0;
-    width: 327px;
+    max-width: 693px;
 
     > h2 {
-      width: 100%;
       font-size: 30px;
       line-height: 29.4px;
       margin-block-end: 12px;
@@ -252,14 +247,14 @@ label {
     }
   }
 
-  img {
+  #logo {
     width: 38.67px;
     height: 40px;
     margin-block: 30px 40px;
   }
 
   .right {
-    max-width: 327px;
+    max-width: 693px;
     margin-block: 40px 24px;
     padding-inline: 16px;
     padding-block: 24px 30px;
@@ -267,7 +262,6 @@ label {
 
   form {
     display: block;
-    max-width: 295px;
   }
 
   .form-group {
@@ -285,7 +279,7 @@ label {
 
   .mobile-paragraph {
     display: block;
-    max-width: 316px;
+    max-width: 670px;
     margin-inline: 6px 5px;
 
     > p {
@@ -315,8 +309,4 @@ label {
     width: 460px;
     line-height: 25px;
   }
-
-  /* .responsive-paragraph::before {
-    content: "Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.";
-  } */
 }
