@@ -1,0 +1,722 @@
+/* CSS Reset */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Main CSS */
+body {
+  background-color: rgba(245, 248, 250, 1);
+}
+
+main {
+  max-width: 1440px;
+  padding-inline: 40px;
+  padding-block: 28px 139px;
+}
+
+.nav-bar {
+  max-width: 1360px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #e0e6ea;
+}
+
+.nav-div {
+  max-width: 476px;
+}
+
+nav {
+  width: 100%;
+  margin-block-end: 31px;
+}
+
+nav ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-block: 11px 12px;
+}
+
+nav ul li:nth-child(1) {
+  margin-inline-end: 42px;
+}
+nav ul li:nth-child(2) {
+  margin-inline-end: 46px;
+}
+nav ul li:nth-child(3) {
+  margin-inline-end: 44px;
+}
+nav ul li:nth-child(4) {
+  margin-inline-end: 44px;
+}
+
+nav ul li a {
+  font-family: "Lato";
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #1d2c3c;
+}
+
+.nav-button {
+  border: 2px solid #646e7a;
+  border-radius: 6px;
+  padding-inline: 8px 9px;
+  padding-block: 9px 10px;
+}
+
+.wpdiv {
+  max-width: 15%;
+}
+
+#wppusher-logo {
+  margin-block: 2px 30px;
+  width: 100%;
+  height: 39px;
+}
+
+.panel {
+  max-width: 892px;
+  margin-inline: auto;
+  margin-block-start: 85px;
+}
+
+.rectangle {
+  display: flex;
+}
+
+.white {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+.blue {
+  background-color: #1179bf;
+  width: 35%;
+}
+
+h4 {
+  display: inline;
+}
+
+.title {
+  margin-block-start: 41px;
+  border-bottom: 2px solid #f5f7fa;
+
+  > h2 {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #1d2c3c;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-inline-start: 48px;
+    margin-block-end: 24px;
+  }
+}
+
+.basic {
+  margin-block-start: 34px;
+  padding-inline: 49px 47px;
+  padding-block-end: 41px;
+  border-bottom: 2px solid #f5f7fa;
+}
+
+.basic-title {
+  max-width: 260px;
+  margin-block-end: 9px;
+}
+
+.number {
+  color: #548bc5;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+  width: 16px;
+  height: 19px;
+  padding-block: 2px 7px;
+  padding-inline: 7px;
+  border: 2px solid;
+  border-radius: 50%;
+  margin-inline: 5px 4px;
+}
+
+.text-beside-number {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  color: #1d2c3c;
+}
+
+.basic-form form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.basic-form-group {
+  margin-block-end: 15px;
+}
+
+.basic-label {
+  margin-block-end: 7px;
+  width: 187px;
+}
+.basic-input input {
+  width: 227px;
+  background-color: #edeff2;
+  border: none;
+  padding-block: 9px 10px;
+  padding-inline: 13px 27px;
+}
+
+#email {
+  width: 370px;
+}
+
+.payment {
+  width: 100%;
+  margin-block-start: 33px;
+  padding-inline: 49px 48px;
+  padding-block-end: 41px;
+  border-bottom: 2px solid #f5f7fa;
+}
+
+.payment-title {
+  max-width: 286px;
+  margin-block-end: 21px;
+}
+
+.payment-form {
+  max-width: 483px;
+}
+
+.payment-label {
+  max-width: 187px;
+  margin-block-end: 7px;
+}
+
+.payment-input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-block: 9px 10px;
+  padding-inline: 13px 16px;
+  background-color: #edeff2;
+
+  > input {
+    background-color: #edeff2;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+  }
+}
+
+.card-number-input {
+  width: 57%;
+}
+
+.expiry-date-input {
+  width: 29%;
+}
+
+.cvv-input {
+  width: 14%;
+}
+
+.payment-input input {
+  border: none;
+  outline: none;
+}
+
+.purchase {
+  margin-block-start: 39px;
+  padding-inline: 49px 48px;
+  padding-block-end: 46.9px;
+  border-bottom: 2px solid #f5f7fa;
+}
+
+.purchase-button {
+  max-width: 483px;
+
+  > button {
+    width: 100%;
+    padding-block: 13px 17px;
+    background: rgba(3, 142, 125, 1);
+    font-family: "Lato";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    border: transparent;
+    border-radius: 5px;
+  }
+}
+
+.purchase-text {
+  margin-block-start: 23px;
+  margin-inline: 75px;
+  display: flex;
+
+  > p {
+    margin-inline-start: 10px;
+  }
+}
+
+.purchase-text p {
+  margin-inline-start: 10px;
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 700;
+
+  > span {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+  }
+}
+
+.shape {
+  max-width: 92px;
+  margin-inline: 197px 194px;
+  margin-block-start: 31px;
+}
+
+.bottom-p {
+  max-width: 867px;
+  margin-inline: auto;
+  margin-block-start: 33px;
+  > p {
+    width: 100%;
+    text-align: center;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+  }
+}
+
+.sidebar {
+  width: 100%;
+  padding-block: 42px 143px;
+  padding-inline: 44px 37px;
+}
+
+.sidebar-content {
+  max-width: 231px;
+}
+
+.plan {
+  width: 100%;
+
+  > p:first-child {
+    width: max-content;
+    margin-block-end: 5px;
+    margin-inline-start: 2px;
+    font-family: "Lato";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+  }
+}
+.pricing {
+  max-width: 140px;
+  display: flex;
+  text-align: center;
+
+  > p:first-child {
+    max-width: 14px;
+    margin-block-start: 18px;
+    margin-inline-end: 6px;
+    font-family: "Lato";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  > p:nth-child(2) {
+    max-width: 121px;
+    margin-block-start: 5px;
+    font-family: "Lato";
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 72px;
+    color: rgba(255, 255, 255, 1);
+
+    > span {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 21.6px;
+    }
+  }
+}
+
+.plan-p {
+  max-width: 229px;
+
+  > p {
+    width: 100%;
+    margin-block-start: 3px;
+    margin-inline-start: 2px;
+    font-family: "Lato";
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.details {
+  max-width: 170px;
+  margin-block-start: 36px;
+  margin-inline-start: 1px;
+
+  > ul {
+    list-style: none;
+    padding-inline-start: 0;
+
+    > li {
+      font-family: "Lato";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 1);
+    }
+
+    > li::before {
+      content: url("./assets/Combined\ Shape\ Copy\ 2.svg");
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      margin-inline-end: 11px;
+      margin-block-end: 16px;
+    }
+  }
+}
+
+.five {
+  font-weight: 700;
+}
+
+.switch {
+  max-width: 184px;
+  margin-block-start: 38px;
+  margin-inline-start: 1px;
+  > p {
+    width: 100%;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 400;
+    /* line-height: 19.2px; */
+    color: rgba(255, 255, 255, 1);
+    border-bottom: 4px solid rgba(185, 245, 255, 1);
+  }
+}
+
+.switch p span:nth-child(1) {
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+}
+
+.switch p span:nth-child(2) {
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  margin-block-end: 47px;
+}
+
+.switch p span:nth-child(3) {
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+}
+
+.switch p span:nth-child(4) {
+  font-family: "Lato";
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 19.2px;
+}
+.switch p span:nth-child(5) {
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+}
+
+.switch p span:nth-child(6) {
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+.quote {
+  max-width: 229px;
+  margin-block-start: 41px;
+  margin-inline-start: 2px;
+  padding-block-start: 41px;
+  border-top: 2px solid rgba(255, 255, 255, 1);
+  > p {
+    font-family: "Lato";
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.quote p span:first-child {
+  font-family: "Lato";
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.quote p span:nth-child(2) {
+  font-family: Lato;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.bitmart {
+  display: flex;
+  > img,
+  p {
+    display: inline-block;
+  }
+
+  > img {
+    margin-block-start: 17px;
+    margin-inline-end: 14px;
+    border-radius: 50%;
+    object-fit: contain;
+  }
+
+  > p {
+    margin-block-start: 27px;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.div-popover {
+  display: none;
+}
+/* General container */
+.div-popover {
+  position: relative;
+}
+
+/* Open menu button */
+.nav-button {
+  background: #4caf50; /* Green */
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.nav-button:hover {
+  transform: scale(1.1); /* Hover effect */
+}
+
+/* Popover menu - hidden by default */
+.menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  padding: 15px;
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none; /* Prevent interaction when hidden */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+/* When the menu is targeted */
+.menu:target {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all; /* Enable interaction */
+}
+
+/* Close button styling */
+.close-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  color: #f44336; /* Red for close */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.close-button:hover {
+  color: #d32f2f; /* Darker red */
+}
+
+/* Menu items */
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  margin-bottom: 10px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333333; /* Dark gray text */
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu ul li a:hover {
+  background: #4caf50; /* Green background */
+  color: #ffffff; /* White text */
+}
+
+@media (max-width: 808px) and (min-width: 768px) {
+  .sidebar {
+    padding-inline: 22px 19px;
+  }
+}
+
+@media (max-width: 820px) {
+  .nav-div {
+    display: none;
+  }
+  .div-popover {
+    display: block;
+  }
+
+  .mask-text {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 768px) {
+  .rectangle {
+    display: block;
+  }
+
+  .white,
+  .blue {
+    width: 100%;
+  }
+
+  .sidebar-cotent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 546px) {
+  #email {
+    max-width: 227px;
+  }
+}

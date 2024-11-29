@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WP PSUHER CHECKOUT</title>
+    <link rel="stylesheet" href="./wp-pusher.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="nav-bar">
+        <div class="wpdiv">
+          <img
+            src="./assets/wppusher-logo copy.svg"
+            alt="wp-pusher"
+            id="wppusher-logo"
+          />
+        </div>
+
+        <div class="nav-div">
+          <nav>
+            <ul>
+              <li><a href="#">Download</a></li>
+              <li><a href="#">Learn more</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Help</a></li>
+              <li>
+                <a href="#"><button class="nav-button">Account</button></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="div-popover">
+          <!-- Open menu button -->
+          <a href="#menu" class="nav-button">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/120px-Hamburger_icon.svg.png"
+              alt="menu"
+              width="20px"
+              height="20px"
+            />
+          </a>
+
+          <!-- Popover menu -->
+          <nav id="menu" class="menu">
+            <a href="#" class="close-button">
+              <span aria-hidden="true">❌</span>
+              <span>Close menu</span>
+            </a>
+            <ul>
+              <li><a href="#">Download</a></li>
+              <li><a href="#">Learn more</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Help</a></li>
+              <li>
+                <a href="#"><button class="nav-button">Account</button></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <div class="panel">
+        <section class="rectangle">
+          <div class="white">
+            <section class="title">
+              <h2>Checkout</h2>
+            </section>
+
+            <section class="basic">
+              <div class="basic-title">
+                <h4 class="number">1</h4>
+                <h4 class="text-beside-number">Your Basic Information</h4>
+              </div>
+
+              <div class="basic-form">
+                <form action="#">
+                  <div class="basic-form-group">
+                    <div class="basic-label">
+                      <label for="first-name">First Name</label>
+                    </div>
+                    <div class="basic-input">
+                      <input
+                        type="text"
+                        id="first-name"
+                        placeholder="Jane"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="basic-form-group">
+                    <div class="basic-label">
+                      <label for="last-name">Last Name</label>
+                    </div>
+                    <div class="basic-input">
+                      <input
+                        type="text"
+                        id="last-name"
+                        placeholder="Doe"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="basic-form-group">
+                    <div class="basic-label">
+                      <label for="email">E-mail</label>
+                    </div>
+                    <div class="basic-input">
+                      <input
+                        type="email"
+                        id="email"
+                        placeholder="janedoe@example.com"
+                        required
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </section>
+
+            <section class="payment">
+              <div class="payment-title">
+                <h4 class="number">2</h4>
+                <h4 class="text-beside-number">Your Payment Information</h4>
+              </div>
+
+              <div class="payment-form">
+                <form action="#">
+                  <div class="payment-form-group">
+                    <div class="payment-label">
+                      <label for="card-number">Credit Card</label>
+                    </div>
+                    <div class="payment-input">
+                      <input
+                        type="text"
+                        id="card-number"
+                        class="card-number-input"
+                        placeholder="Card Number"
+                        required
+                      />
+                      <input
+                        type="text"
+                        id="expiry-date"
+                        class="expiry-date-input"
+                        placeholder="MM/YY"
+                        required
+                      />
+
+                      <input
+                        type="number"
+                        id="cvv"
+                        class="cvv-input"
+                        placeholder="CVV"
+                        required
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </section>
+
+            <section class="purchase">
+              <div class="purchase-button">
+                <button>Buy WP Pusher</button>
+              </div>
+              <div class="purchase-text">
+                <div class="mask">
+                  <img
+                    src="./assets/Mask.svg"
+                    alt="mask"
+                    class="mask-svg"
+                    width="20px"
+                    height="20px"
+                  />
+                </div>
+
+                <div class="mask-text">
+                  <p>
+                    Need any help?
+                    <span>Don't hesitate to contact support!</span>
+                  </p>
+                </div>
+              </div>
+              <div class="shape">
+                <img
+                  src="./assets/Shape.svg"
+                  alt="shape"
+                  width="92px"
+                  height="20.1px"
+                />
+              </div>
+            </section>
+          </div>
+
+          <div class="blue">
+            <section class="sidebar">
+              <div class="sidebar-cotent">
+                <div class="plan">
+                  <p>Freelancer</p>
+                  <div class="pricing">
+                    <p>$</p>
+                    <p>99<span>/ year</span></p>
+                  </div>
+
+                  <div class="plan-p">
+                    <p>
+                      Automatically renews <br />
+                      after 1 year
+                    </p>
+                  </div>
+                </div>
+
+                <div class="details">
+                  <ul>
+                    <li>Use on <span class="five">5</span> client sites</li>
+                    <li>Private repositories</li>
+                    <li>Email support</li>
+                  </ul>
+                </div>
+
+                <div class="switch">
+                  <p>
+                    Need <span>20</span> <span>client sites?</span><br />
+                    <span>Switch to the</span> <span>Agency</span>
+                    <span>plan</span><span>.</span>
+                  </p>
+                </div>
+
+                <div class="quote">
+                  <p>
+                    FTP is horrible to deal with. <span>WP Pusher</span>
+                    <span
+                      >solves that issue, and the customer support is
+                      awesome!</span
+                    >
+                  </p>
+
+                  <div class="bitmart">
+                    <img
+                      src="./assets/Bitmap.svg"
+                      alt="bitmart"
+                      width="40px"
+                      height="40px"
+                    />
+                    <p>Kirk Beard</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <div class="bottom-p">
+          <p>&copy; 2018 WP Pusher IVS· <span>Terms of Service</span></p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
